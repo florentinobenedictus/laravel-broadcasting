@@ -21,6 +21,7 @@ sendMessageForm.addEventListener('submit', function(e){
 	}
 	window.Echo.channel('chatRoom').listen('.chatting', (res) => {
 		messageElement.innerHTML += '<div><strong>'+ res.username +': </strong><span>'+ res.message +'</span></div>';
+        sendMessageForm.addEventListener('submit');
 	});
 	
 	userMessageInput.value = '';
