@@ -1,34 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Chat Room</title>
-	
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="./css/app.css">
-</head>
-<body>
-	<center><h1>Chat Room</h1></center>
-	<div class="comntainer m-8">
-		<div class="row m-8 p-5">
-			<div class="col-xs-6">
-				<div class="card">
-					<div class="card-body">
-						<form id="chatForm">
-							<div class="mb-3" id="messageOutput"></div>
-							<hr>
-							<div class="form-group mb-3">
-								<input type="text" class="form-control" id="message" placeholder="Message">
-							</div>
-							<button type="submit" class="btn btn-success">Send</button>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
+@extends('layouts.app')
+
+@section('content')
+
+<div class="container">
+{{-- uncomment jika menggunakan presence channel
+	<div class="col-md-4">
+		<center>
+			<h3>Username List:</h3><br>
+			<div class="mb-4" id="usernameList"></div>
+		</center>
 	</div>
-	<script src="./js/app.js"></script>
-</body>
-</html>
+	<br><br>
+--}}
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-default">
+                <div class="panel-heading">Chats</div>
+
+                <div class="panel-body">
+                    <chat-messages :messages="messages"></chat-messages>
+                </div>
+                <div class="panel-footer">
+                    <chat-form
+                        v-on:messagesent="addMessage"
+                        :user="{{ Auth::user() }}"
+                    ></chat-form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection
