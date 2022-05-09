@@ -10,11 +10,15 @@ Clone the project repository by running the command below if you use https, use 
 git clone https://github.com/florentinobenedictus/laravel-broadcasting.git
 ```
 
-After cloning, run:
+After cloning, change branch to master and run:
 
 ```bash
 composer install
 ```
+1. jika error coba `composer update`<br>
+2. jika `composer update` juga error, ada kemungkinan karena beda versi laravel.<br>
+3. Solusinya overwrite composer.json & composer.lock dan app/Exceptions/Handler.php dengan file yang sesuai versi laravel yang digunakan user
+4. Kemudian lakukan `composer require laravel/ui`, `composer clearcache`, lalu coba `composer install` kembali. Clear cache juga dapat dilakukan dengan `php artisan config:cache`<br>
 
 Duplicate file `.env.example` and rename it `.env`
 
