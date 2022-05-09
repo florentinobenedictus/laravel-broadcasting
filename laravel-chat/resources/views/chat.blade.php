@@ -3,6 +3,15 @@
 @section('content')
 
 <div class="container">
+{{-- uncomment jika menggunakan presence channel
+	<div class="col-md-4">
+		<center>
+			<h3>Username List:</h3><br>
+			<div class="mb-4" id="usernameList"></div>
+		</center>
+	</div>
+	<br><br>
+--}}
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
