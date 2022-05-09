@@ -12,5 +12,10 @@
 */
 
 Broadcast::channel('chat', function ($user) {
+	// Private
     return Auth::check();
+	// Presence
+	/* if( Auth::check()){
+	return ['name' => $user->name];
+   } */
 });
