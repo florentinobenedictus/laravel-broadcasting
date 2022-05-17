@@ -1,6 +1,6 @@
 # Private dan Presence Channel Menggunakan Laravel dan Pusher
-- rivate Channel](#private-channel)<br>
-- resence Channel](#presence-channel)<br>
+- [Private Channel](#private-channel)<br>
+- [Presence Channel](#presence-channel)<br>
 
 ## Private Channel
 
