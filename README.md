@@ -151,7 +151,7 @@ Hasil akhir `room.blade.php` akan terlihat seperti ini
 </html>
 ```
 #### 9. buka `resource/js/bootstrap.js`
-Kemudian uncomment bagian bawah<br>s
+Kemudian uncomment bagian bawah<br>
 ![](https://i.snipboard.io/dHy6xF.jpg)
 
 #### 10. Setup JS
