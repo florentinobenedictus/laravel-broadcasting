@@ -68,9 +68,9 @@ And finally, start the application:
 php artisan serve
 ```
 
-- and visit [http://localhost:8000/](http://localhost:8000/) to see the appvlication in action.
+- and visit [http://localhost:8000/](http://localhost:8000/) to see the application in action.
 
-![serve](https://user-images.githubusercontent.com/73771452/168735898-adae3b85-a09f-485d-8d75-cf585ca09b3c.png)
+![serve](https://user-images.githubusercontent.com/73771452/168737697-8f150687-ef0c-4826-81e8-f4becc1877bb.png)
 
 ## Built With
 
