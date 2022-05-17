@@ -232,9 +232,13 @@ sendMessageForm.addEventListener('submit', function(e){
 	userMessageInput.value = '';
 });
 ```
-- Terakhir, tambahkan `chat.js` pada `app.js` dengan
+- Tambahkan `chat.js` pada `app.js` dengan
 ```js
 require('./chat');
+```
+- Tambahkan `app.js` pada `room.blade.php`
+```blade.php
+<script src="./js/app.js"></script>
 ```
 
 #### 11. Compile JS
