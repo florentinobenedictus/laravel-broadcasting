@@ -50,13 +50,12 @@ PUSHER_APP_KEY=xxxxxxxxxxxxxxxxxxxx
 PUSHER_APP_SECRET=xxxxxxxxxxxxxxxxxxxx
 PUSHER_APP_CLUSTER=xxx
 ```
-- ![env_config](https://user-images.githubusercontent.com/73771452/168735866-18c05c56-25a8-4f0d-8113-1984e3c9582a.png)
+![env_config](https://user-images.githubusercontent.com/73771452/168735866-18c05c56-25a8-4f0d-8113-1984e3c9582a.png)
 
 #### Database Migrations
 
-Be sure to fill in your database details in your `.env` file before running the migrations:
-
-- ![env_db](https://user-images.githubusercontent.com/73771452/168735890-77a2bd34-c638-41c6-b7ff-a81b47e41317.png)
+- Be sure to fill in your database details in your `.env` file before running the migrations:
+![env_db](https://user-images.githubusercontent.com/73771452/168735890-77a2bd34-c638-41c6-b7ff-a81b47e41317.png)
 
 ```bash
 php artisan migrate
@@ -68,9 +67,8 @@ And finally, start the application:
 php artisan serve
 ```
 
-and visit [http://localhost:8000/](http://localhost:8000/) to see the appvlication in action.
-
-- ![serve](https://user-images.githubusercontent.com/73771452/168735898-adae3b85-a09f-485d-8d75-cf585ca09b3c.png)
+- and visit [http://localhost:8000/](http://localhost:8000/) to see the appvlication in action.
+![serve](https://user-images.githubusercontent.com/73771452/168735898-adae3b85-a09f-485d-8d75-cf585ca09b3c.png)
 
 ## Built With
 
