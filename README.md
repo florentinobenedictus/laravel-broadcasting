@@ -240,7 +240,7 @@ require('./chat');
 #### 11. Compile JS
 - Hasil compile akan berada pada folder public
 - Gunakan `npm run dev` atau `npm run watch` jika ingin JS auto compile tiap terjadi perubahan
-- 
+
 #### 12. Buat controller
 - `php artisan make:controller MessageController`
 - Buat fungsi index yang akan membuat event dengan value username dan message
